@@ -1,0 +1,119 @@
+:root {
+  --text: #2a2a2a;
+  --text-h: #ffcb05;
+  --bg: #f5f5f5;
+  --border: #3b4cca;
+  --code-bg: #e0e7ff;
+  --accent: #ff1c1c;
+  --accent-bg: rgba(255, 203, 5, 0.15);
+  --accent-border: #3b4cca;
+  --social-bg: rgba(59, 76, 202, 0.08);
+  --shadow:
+    rgba(59, 76, 202, 0.08) 0 10px 15px -3px, rgba(255, 203, 5, 0.08) 0 4px 6px -2px;
+
+  --sans: 'Montserrat', 'Segoe UI', 'Roboto', Arial, sans-serif;
+  --heading: 'Pokemon Solid', 'Montserrat', 'Segoe UI', 'Roboto', Arial, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  font: 18px/145% var(--sans);
+  letter-spacing: 0;
+  color-scheme: light dark;
+  color: var(--text);
+  background: #06101c;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #e0e7ff;
+    --text-h: #ffcb05;
+    --bg: #232946;
+    --border: #ffcb05;
+    --code-bg: #3b4cca;
+    --accent: #ff1c1c;
+    --accent-bg: rgba(255, 203, 5, 0.15);
+    --accent-border: #ffcb05;
+    --social-bg: rgba(255, 203, 5, 0.08);
+    --shadow:
+      rgba(255, 203, 5, 0.12) 0 10px 15px -3px, rgba(59, 76, 202, 0.12) 0 4px 6px -2px;
+  }
+
+  #social .button-icon {
+    filter: invert(1) brightness(2);
+  }
+}
+
+body {
+  margin: 0;
+  font-family: var(--sans);
+}
+
+@font-face {
+  font-family: 'Pokemon Solid';
+  src: url('https://fonts.cdnfonts.com/s/16274/Pokemon%20Solid.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+#root {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: left;
+  border-inline: 0;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+h1,
+h2 {
+  font-family: var(--heading);
+  font-weight: 500;
+  color: var(--text-h);
+}
+
+h1 {
+  font-size: 56px;
+  letter-spacing: 0;
+  margin: 32px 0;
+  @media (max-width: 1024px) {
+    font-size: 36px;
+    margin: 20px 0;
+  }
+}
+h2 {
+  font-size: 24px;
+  line-height: 118%;
+  letter-spacing: -0.24px;
+  margin: 0 0 8px;
+  @media (max-width: 1024px) {
+    font-size: 20px;
+  }
+}
+p {
+  margin: 0;
+}
+
+code,
+.counter {
+  font-family: var(--mono);
+  display: inline-flex;
+  border-radius: 4px;
+  color: var(--text-h);
+}
+
+code {
+  font-size: 15px;
+  line-height: 135%;
+  padding: 4px 8px;
+  background: var(--code-bg);
+}
