@@ -1,16 +1,103 @@
-# React + Vite
+# 🎮 Caca-pokebolas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Um jogo divertido desenvolvido para proporcionar entretenimento e desafios aos jogadores.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+# 🚀 Como clonar o projeto
 
-## React Compiler
+## 1. Clone o repositório
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+git clone <URL_DO_REPOSITORIO>
+```
 
-## Expanding the ESLint configuration
+## 2. Entre na pasta do projeto
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+cd Caca-pokebolas
+```
+
+---
+
+# 📋 Pré-requisitos
+
+Antes de rodar o projeto, você precisa ter instalado:
+
+- Git
+- Node.js
+
+---
+
+# 📥 Instalando as dependências
+
+Na raiz do projeto execute:
+
+```bash
+npm install
+```
+
+---
+
+# ▶️ Rodando o projeto
+
+Execute o comando abaixo:
+
+```bash
+npm run dev
+```
+
+O projeto estará disponível em:
+
+```txt
+http://localhost:3000
+```
+
+---
+
+# 🛠 Estrutura do projeto
+
+```txt
+📦 Caca-pokebolas
+ ┣ 📂 src
+ ┣ 📂 public
+ ┣ 📄 package.json
+ ┣ 📄 README.md
+ ┗ 📄 .env
+```
+
+---
+
+# 📌 Comandos úteis
+
+## Atualizar dependências
+
+```bash
+npm update
+```
+
+## Build de produção
+
+```bash
+npm run build
+```
+
+## Rodar projeto em produção
+
+```bash
+npm start
+```
+
+---
+
+# 👨‍💻 Tecnologias utilizadas
+
+- React
+- Next.js
+- TypeScript
+
+---
+
+# 📄 Licença
+
+Este projeto está sob a licença MIT.
